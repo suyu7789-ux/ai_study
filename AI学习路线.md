@@ -41,13 +41,13 @@
 **阶段产出**：一个包含 4 个小项目的 GitHub 仓库。
 
 ### Week 1：Python 快速上手（重点学与 Java 的差异）
-- [ ] 环境搭建：`uv` 或 `conda` + 虚拟环境（≈ Maven 管依赖）
-- [ ] 基础语法：`list / dict / set`（dict ≈ HashMap）
-- [ ] 列表推导式、`f-string`
-- [ ] 函数、`*args/**kwargs`、装饰器（≈ 注解 + AOP）
-- [ ] 类型注解 `def f(x: str) -> int`
-- [ ] `requests` 发 HTTP 请求（≈ RestTemplate/OkHttp）
-- [ ] **产出**：用 `requests` 调用任意公开 REST API 并打印结果
+- [x] 环境搭建：`uv` 或 `conda` + 虚拟环境（≈ Maven 管依赖）
+- [x] 基础语法：`list / dict / set`（dict ≈ HashMap）
+- [x] 列表推导式、`f-string`
+- [x] 函数、`*args/**kwargs`、装饰器（≈ 注解 + AOP）
+- [x] 类型注解 `def f(x: str) -> int`
+- [x] `requests` 发 HTTP 请求（≈ RestTemplate/OkHttp）
+- [x] **产出**：用 `requests` 调用任意公开 REST API 并打印结果
 
 ### Week 2：第一次调用大模型 API
 - [ ] 申请 API Key（Claude / 通义 / 智谱 / DeepSeek 任选）
@@ -154,4 +154,5 @@
 | 日期 | 完成内容 | 备注 / 产出物位置 |
 |------|---------|------------------|
 | 2026-07-09 | 制定完整学习路线，建立本文件 | 本文件 |
+| 2026-07-10 | Week 1 完成（一步步手把手重做）：git 全流程(init→配身份→.gitignore→commit→push GitHub)、装 PyCharm、list/dict/set、列表推导式+f-string、函数+*args/**kwargs+装饰器(≈AOP)、类型注解、requests 调 GitHub API | `week1/01~06_*.py`、`week1/学习记录.md`（详细流水账）|
 | | | |
