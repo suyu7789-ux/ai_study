@@ -23,13 +23,13 @@
 
 ## 五阶段总览
 
-| 阶段 | 主题 | 周期 | 核心目标 |
-|------|------|------|---------|
-| 一 | 打地基 | ~4 周 | Python + 调大模型 + Prompt + Function Calling |
-| 二 | AI 应用开发（RAG） | ~6-8 周 | 独立做出"知识库问答"应用 |
-| 三 | AI Agent 开发 | ~6-8 周 | 理解并能开发智能体（核心竞争力） |
-| 四 | 够用的底层原理 | 全程穿插 | 理解 Transformer / 幻觉 / 微调等，够对话够排查 |
-| 五 | 工程化与求职 | 持续 | 部署 / LLMOps + 完整项目 + 找工作 |
+| 阶段 | 主题               | 周期     | 核心目标                                       |
+| ---- | ------------------ | -------- | ---------------------------------------------- |
+| 一   | 打地基             | ~4 周    | Python + 调大模型 + Prompt + Function Calling  |
+| 二   | AI 应用开发（RAG） | ~6-8 周  | 独立做出"知识库问答"应用                       |
+| 三   | AI Agent 开发      | ~6-8 周  | 理解并能开发智能体（核心竞争力）               |
+| 四   | 够用的底层原理     | 全程穿插 | 理解 Transformer / 幻觉 / 微调等，够对话够排查 |
+| 五   | 工程化与求职       | 持续     | 部署 / LLMOps + 完整项目 + 找工作              |
 
 **预计约 6 个月达到求职水平**（有工程基础可能更快）。
 
@@ -41,32 +41,36 @@
 **阶段产出**：一个包含 4 个小项目的 GitHub 仓库。
 
 ### Week 1：Python 快速上手（重点学与 Java 的差异）
-- [x] 环境搭建：`uv` 或 `conda` + 虚拟环境（≈ Maven 管依赖）
-- [x] 基础语法：`list / dict / set`（dict ≈ HashMap）
-- [x] 列表推导式、`f-string`
-- [x] 函数、`*args/**kwargs`、装饰器（≈ 注解 + AOP）
-- [x] 类型注解 `def f(x: str) -> int`
-- [x] `requests` 发 HTTP 请求（≈ RestTemplate/OkHttp）
-- [x] **产出**：用 `requests` 调用任意公开 REST API 并打印结果
+
+- [X] 环境搭建：`uv` 或 `conda` + 虚拟环境（≈ Maven 管依赖）
+- [X] 基础语法：`list / dict / set`（dict ≈ HashMap）
+- [X] 列表推导式、`f-string`
+- [X] 函数、`*args/**kwargs`、装饰器（≈ 注解 + AOP）
+- [X] 类型注解 `def f(x: str) -> int`
+- [X] `requests` 发 HTTP 请求（≈ RestTemplate/OkHttp）
+- [X] **产出**：用 `requests` 调用任意公开 REST API 并打印结果
 
 ### Week 2：第一次调用大模型 API
-- [x] 申请 API Key（Claude / 通义 / 智谱 / DeepSeek 任选）—— 选 DeepSeek（国内易注册、便宜、OpenAI 兼容）
-- [x] 安装 SDK（用 `uv add openai`，DeepSeek 兼容 OpenAI SDK）
-- [x] 理解请求结构：`system` / `messages`（多轮）/ `model` / `max_tokens`
-- [x] 理解 `temperature`（0=稳定，1=随机；业务通常调低）—— 做了对比实验，附带认识到"真实 API 上 temp=0 也不保证完全可复现"
-- [x] 流式输出 `stream=True`
-- [x] 理解 token / 上下文窗口（计费 & 记忆容量单位）
-- [x] **产出**：命令行多轮对话小程序（记住上下文 + 流式输出）
+
+- [X] 申请 API Key（Claude / 通义 / 智谱 / DeepSeek 任选）—— 选 DeepSeek（国内易注册、便宜、OpenAI 兼容）
+- [X] 安装 SDK（用 `uv add openai`，DeepSeek 兼容 OpenAI SDK）
+- [X] 理解请求结构：`system` / `messages`（多轮）/ `model` / `max_tokens`
+- [X] 理解 `temperature`（0=稳定，1=随机；业务通常调低）—— 做了对比实验，附带认识到"真实 API 上 temp=0 也不保证完全可复现"
+- [X] 流式输出 `stream=True`
+- [X] 理解 token / 上下文窗口（计费 & 记忆容量单位）
+- [X] **产出**：命令行多轮对话小程序（记住上下文 + 流式输出）
 
 ### Week 3：Prompt Engineering（性价比最高的一周）
-- [ ] 角色设定（System Prompt）
-- [ ] Few-shot（给示例提升准确率）
-- [ ] 思维链 CoT（"一步步思考"）
-- [ ] ⭐ 结构化输出（要求返回 JSON，后端最关键）
+
+- [X] 角色设定（System Prompt）
+- [X] Few-shot（给示例提升准确率）
+- [X] 思维链 CoT（"一步步思考"）
+- [X] ⭐ 结构化输出（要求返回 JSON，后端最关键）
 - [ ] 防幻觉技巧（"不确定就说不知道"、"只根据给定资料回答"）
 - [ ] **产出**：简历信息提取器（输入简历文本 → 返回固定结构 JSON → Python 解析）
 
 ### Week 4：Function Calling / Tool Use（Agent 地基）
+
 - [ ] 理解 Function Calling 概念（模型自己决定何时调用你的函数）
 - [ ] 定义 tool 的 JSON schema（像写 API 文档）
 - [ ] 走完整回合：模型请求调用 → 你执行 → 结果喂回 → 模型最终答复
@@ -151,9 +155,9 @@
 
 ## 进度日志
 
-| 日期 | 完成内容 | 备注 / 产出物位置 |
-|------|---------|------------------|
-| 2026-07-09 | 制定完整学习路线，建立本文件 | 本文件 |
-| 2026-07-10 | Week 1 完成（一步步手把手重做）：git 全流程(init→配身份→.gitignore→commit→push GitHub)、装 PyCharm、list/dict/set、列表推导式+f-string、函数+*args/**kwargs+装饰器(≈AOP)、类型注解、requests 调 GitHub API | `week1/01~06_*.py`、`week1/学习记录.md`（详细流水账）|
-| 2026-07-12 | Week 2 完成（一步步手把手）：申请 DeepSeek Key、.env+.gitignore 安全存放密钥、python-dotenv 读取、requests 裸调大模型看清 HTTP 本质、换 openai SDK(兼容生态)、理解 token/上下文窗口/计费、多轮对话记忆(手动维护 messages)、流式输出(stream/delta/flush)、temperature 实验(附"temp=0 不保证完全可复现"的工程认知)。产出命令行多轮对话小程序 | `week2/01~06_*.py`、`week2/学习记录.md`（详细流水账）|
-| | | |
+| 日期       | 完成内容                                                                                                                                                                                                                                                                                                                                   | 备注 / 产出物位置                                         |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------- |
+| 2026-07-09 | 制定完整学习路线，建立本文件                                                                                                                                                                                                                                                                                                               | 本文件                                                    |
+| 2026-07-10 | Week 1 完成（一步步手把手重做）：git 全流程(init→配身份→.gitignore→commit→push GitHub)、装 PyCharm、list/dict/set、列表推导式+f-string、函数+*args/**kwargs+装饰器(≈AOP)、类型注解、requests 调 GitHub API                                                                                                                            | `week1/01~06_*.py`、`week1/学习记录.md`（详细流水账） |
+| 2026-07-12 | Week 2 完成（一步步手把手）：申请 DeepSeek Key、.env+.gitignore 安全存放密钥、python-dotenv 读取、requests 裸调大模型看清 HTTP 本质、换 openai SDK(兼容生态)、理解 token/上下文窗口/计费、多轮对话记忆(手动维护 messages)、流式输出(stream/delta/flush)、temperature 实验(附"temp=0 不保证完全可复现"的工程认知)。产出命令行多轮对话小程序 | `week2/01~06_*.py`、`week2/学习记录.md`（详细流水账） |
+|            |                                                                                                                                                                                                                                                                                                                                            |                                                           |
