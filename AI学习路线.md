@@ -66,8 +66,8 @@
 - [X] Few-shot（给示例提升准确率）
 - [X] 思维链 CoT（"一步步思考"）
 - [X] ⭐ 结构化输出（要求返回 JSON，后端最关键）
-- [ ] 防幻觉技巧（"不确定就说不知道"、"只根据给定资料回答"）
-- [ ] **产出**：简历信息提取器（输入简历文本 → 返回固定结构 JSON → Python 解析）
+- [X] 防幻觉技巧（"不确定就说不知道"、"只根据给定资料回答"）
+- [X] **产出**：简历信息提取器（输入简历文本 → 返回固定结构 JSON → Python 解析）
 
 ### Week 4：Function Calling / Tool Use（Agent 地基）
 
@@ -160,4 +160,4 @@
 | 2026-07-09 | 制定完整学习路线，建立本文件                                                                                                                                                                                                                                                                                                               | 本文件                                                    |
 | 2026-07-10 | Week 1 完成（一步步手把手重做）：git 全流程(init→配身份→.gitignore→commit→push GitHub)、装 PyCharm、list/dict/set、列表推导式+f-string、函数+*args/**kwargs+装饰器(≈AOP)、类型注解、requests 调 GitHub API                                                                                                                            | `week1/01~06_*.py`、`week1/学习记录.md`（详细流水账） |
 | 2026-07-12 | Week 2 完成（一步步手把手）：申请 DeepSeek Key、.env+.gitignore 安全存放密钥、python-dotenv 读取、requests 裸调大模型看清 HTTP 本质、换 openai SDK(兼容生态)、理解 token/上下文窗口/计费、多轮对话记忆(手动维护 messages)、流式输出(stream/delta/flush)、temperature 实验(附"temp=0 不保证完全可复现"的工程认知)。产出命令行多轮对话小程序 | `week2/01~06_*.py`、`week2/学习记录.md`（详细流水账） |
-|            |                                                                                                                                                                                                                                                                                                                                            |                                                           |
+| 2026-08-24 | Week 3 完成（Prompt Engineering）：System 角色设定(3 种人设验证行为/表达/格式控制)、Few-shot(伪造历史对话校准打分尺度)、CoT 思维链(草稿纸效应，9.5→11 纠错)、⭐结构化 JSON 输出(response_format + Pydantic 强类型校验 ≈ Java DTO+@Valid)、⭐防幻觉(强约束 System + 正确拒答)、简历提取器(Pydantic 校验失败自动重试 Self-Correction，实测 3 次重试后成功) | `week3/01~06_*.py`、`week3/学习记录.md`（详细流水账） |
